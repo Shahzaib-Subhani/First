@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    <style>
+        
+         .mynav{
+              background: rgba(0,0,0,0.7) !important;
+              color: white !important;
+          }
+
+          .flex-row a{
+              color: white !important;
+              transition: 0.2s all ease !important;
+
+          }
+
+          .flex-row a:hover{
+              color:darkred !important;
+             
+          }
+
+          .background{
+              background:rgba(0,0,0,0.65) url(hunza2.jpg) !important;
+              background-blend-mode: darken;
+              background-attachment: fixed !important;
+              background-size: cover !important;
+              width: 100% !important;
+              height: 600px ;
+          }
+
+         
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top  mynav">
+        <div class="container-fluid">
+         <h5 class="fs-3 ">Travel'N Tour</h5>
+
+        <div class="d-flex flex-row">
+         <a class="nav-link active me-3" aria-current="page" href="#">Tours</a>
+         <a class="nav-link active me-3" aria-current="page" href="#">Blogs</a>
+         <a class="nav-link active me-4" aria-current="page" href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Details -->
+
+    <div class="background ">
+        <h1 class="text-center text-white">Hunza Valley</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae reiciendis natus rem iusto amet autem dicta. Ea dignissimos rem maxime similique sed deleniti ipsa esse distinctio iusto, ducimus quod qui.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quia unde dolorum eveniet maxime qui deleniti, cupiditate, ipsa, ab enim nisi aperiam labore! Delectus suscipit molestias doloremque dolorem assumenda sequi?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ea sequi explicabo iure aperiam itaque nobis eum deleniti! Rerum culpa iste tenetur pariatur maxime quos dolorum quae quisquam! Assumenda, quis?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque temporibus pariatur est impedit unde et eligendi architecto corporis obcaecati suscipit sint doloremque, fuga odit voluptas ab enim deserunt. Et, ex?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus nam eos? Amet aut, odio perferendis nostrum ipsa sapiente, accusantium consectetur delectus esse fugit nam vel laudantium quam? Tempore, quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsum minus. Suscipit quasi itaque magni nesciunt, ipsa, odit vitae sit dolor atque praesentium molestiae alias ullam quo magnam. Corrupti, suscipit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum officia ad? Animi voluptatum in atque voluptates sunt ex temporibus. Non necessitatibus aliquam ipsum animi laborum sit quia similique obcaecati?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, provident. Reprehenderit delectus aliquid omnis! Ut molestiae earum fuga, nam eligendi voluptate provident est minus error officiis iure beatae neque reprehenderit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia fugiat magnam dignissimos voluptatum totam. Quaerat veritatis eius animi tenetur laudantium vero voluptatum. Provident a ad sint quos, laboriosam delectus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur corporis sunt hic esse possimus optio non nostrum nesciunt labore libero doloribus similique, ratione vel cumque, cum error officia dolorem.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima praesentium quaerat, dicta modi ab perspiciatis nulla. Qui quibusdam nam nihil porro nulla est dicta perferendis asperiores odit quis? Rerum, assumenda.
+            Porro rerum delectus dolorum, repellendus maxime unde architecto! Molestiae error esse unde tempora voluptatibus reprehenderit eaque dolor dicta. Molestiae reiciendis molestias perspiciatis alias rerum corporis laboriosam dolores consectetur iure minima!
+            In dolorum, iste animi, velit distinctio reprehenderit deleniti quidem magni nam, adipisci illum. Ducimus nisi quia in quibusdam. 
+        
+        </p>
+<div class="d-flex justify-content-center">
+        <p id="fun" class=" fs-4 "></p></div>
+        <div class=" d-flex justify-content-center">
+        <button onclick="cong()"  class=" fs-5 btn-outline-primary btn">Book Now</button>
+        <button onclick="canc()" class="ms-5 btn btn-outline-primary fs-5">Cancel</button>
+</div>
+
+        <script>
+            function cong() {
+                document.getElementById("fun").innerHTML = ("Your slot've been booked!");
+                document.getElementById("fun").style = ("background-color: #28a745; border-radius:20px; text-align:center; width:400px; " )
+            }
+           
+            function canc() {
+                document.getElementById("fun").innerHTML = ("Your slot've been Cancelled !")
+                document.getElementById("fun").style = ("background-color: #d00000; border-radius:20px; text-align:center; width:400px; " )
+            }
+        </script>
+    </div>
+</body>
+</html>

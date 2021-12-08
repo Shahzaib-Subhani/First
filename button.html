@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <script src="./Bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    
+      <style>
+
+          .mynav{
+              background: rgba(0,0,0,0.35) !important;
+              color: white !important;
+          }
+
+          .flex-row a{
+              color: white !important;
+              transition: 0.2s all ease !important;
+
+          }
+
+          .flex-row a:hover{
+              color:darkred !important;
+             color: #234568;
+          }
+
+        
+      </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top  mynav">
+        <div class="container-fluid">
+         <h5 class="fs-3 ">Travel'N Tour</h5>
+
+        <div class="d-flex flex-row">
+         <a class="nav-link active me-3" aria-current="page" href="#">Tours</a>
+         <a class="nav-link active me-3" aria-current="page" href="#">Blogs</a>
+         <a class="nav-link active me-4" aria-current="page" href="#">Contact</a>
+        </div>
+    </div>
+      </nav>
+
+     <!-- JS -->
+   
+
+
+     <!-- Carousel -->
+
+     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500">
+            <img src="travel-g.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"  data-bs-interval="1500">
+            <img src="jeshoots.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"  data-bs-interval="1500">
+            <img src="mountaineer.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       
+
+       
+      </div>
+
+      <div class="row  container-fluid d-flex justify-content-evenly mt-5">
+        <div class="card text-center" style="width: 18rem;">
+            <img src="hunza2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hunza Valley</h5>
+              <p class="card-text">Explore Heavens on Earth!</p>
+              <a href="Details.html" class="btn btn-primary ">View Details</a>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem;">
+            <img src="Swat.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Swat Valley</h5>
+              <p class="card-text">Explore Heavens on Earth!</p>
+              <a href="Swat.html" class="btn btn-primary ">View Details</a>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem;">
+            <img src="Neelum.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Neelum Valley</h5>
+              <p class="card-text">Explore Heavens on Earth!</p>
+              <a href="Neelum.html" class="btn btn-primary ">View Details</a>
+            </div>
+        </div>
+
+      </div>
+
+
+      
+</body>
+</html>
